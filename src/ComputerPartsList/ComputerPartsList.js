@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import ComputerPartsItem from '../ComputerPartsItem/ComputerPartsItem';
+import { FEATURES } from '../Features';
 import slugify from 'slugify';
 import './ComputerPartsList.css';
 
 class ComputerPartsList extends Component {
     render() {
-        const itemOptions = this.props.features[this.props.feature].map(item => {
+        const itemOptions = FEATURES[this.props.feature].map(item => {
             const itemHash = slugify(JSON.stringify(item));
             return (
                 <ComputerPartsItem 

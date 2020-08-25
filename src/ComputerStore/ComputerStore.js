@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import ComputerPartsList from '../ComputerPartsList/ComputerPartsList';
+import { FEATURES } from '../Features';
 import './ComputerStore.css';
 
 class ComputerStore extends Component {
     render() {
-        const features = Object.keys(this.props.features).map((feature, idx) => {
+        const features = Object.keys(FEATURES).map((feature, idx) => {
             const featureHash = feature + '-' + idx;
             return (
                 <ComputerPartsList 
                     key={featureHash}
-                    features={this.props.features}
                     feature={feature}
-                    options={this.props.features[idx]}
+                    options={FEATURES[idx]}
                     selected={this.props.selected}
                     handleFeatureUpdate={this.props.handleFeatureUpdate}
                 />
