@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ComputerPartsItem from '../ComputerPartsItem/ComputerPartsItem';
 import slugify from 'slugify';
+import './ComputerPartsList.css';
 
 class ComputerPartsList extends Component {
     render() {

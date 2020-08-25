@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { USCurrencyFormat } from '../CurrencyFormat';
 import slugify from 'slugify';
+import './ComputerPartsItem.css';
 
 class ComputerPartsItem extends Component {
     render() {

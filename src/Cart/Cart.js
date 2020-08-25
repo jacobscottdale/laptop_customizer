@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CartItem from '../CartItem/CartItem';
 import { USCurrencyFormat } from '../CurrencyFormat';
+import './Cart.css';
 
 class Cart extends Component {
     render() {

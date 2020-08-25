@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ComputerPartsList from '../ComputerPartsList/ComputerPartsList';
+import './ComputerStore.css';
 
 class ComputerStore extends Component {
     render() {
